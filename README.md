@@ -1,5 +1,5 @@
 # Arduino-multi-stepper
-Control multiple stepper motors using arduino
+Control multiple stepper motors using an arduino.
 
 ### Table of Contents
 1. [Getting Started](#getting-started)
@@ -51,12 +51,12 @@ A Python module for controlling this specific arduino stepper controller and usi
 If you want to develop your own software package then the communication protocol is as follows:
 Host sends a command to the arduino:
 
--If the command is valid, the arduino responds "ACK" + and optional message
--If the command is invalid, the arduino responds "NAK  + and optional message
+- If the command is valid, the arduino responds "ACK" + and optional message
+- If the command is invalid, the arduino responds "NAK  + and optional message
 
 Then the arduino proceeds to execute the command.
--If the action was performed successfully, the arduino responds with "SUCC"  + and optional message
--If the action encountered a problem, the arduino responds with "FAIL"  + and optional message.
+- If the action was performed successfully, the arduino responds with "SUCC"  + and optional message
+- If the action encountered a problem, the arduino responds with "FAIL"  + and optional message.
 
 The arduino response characters can be changed in the sketch to any char(s) or byte(s) you want, such as "\x06" for ACK.
 
