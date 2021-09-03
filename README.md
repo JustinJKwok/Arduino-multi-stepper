@@ -55,7 +55,7 @@ Host sends a command to the arduino:
 - If the command is valid, the arduino responds "ACK" + and optional message
 - If the command is invalid, the arduino responds "NAK  + and optional message
 
-Then the arduino proceeds to execute the command.
+If the command is valid, then the arduino proceeds to execute the command.
 - If the action was performed successfully, the arduino responds with "SUCC"  + and optional message
 - If the action encountered a problem, the arduino responds with "FAIL"  + and optional message.
 
