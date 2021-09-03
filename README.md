@@ -49,6 +49,7 @@ A Python module for controlling this specific arduino stepper controller and usi
 [add link]
 
 If you want to develop your own software package then the communication protocol is as follows:
+
 Host sends a command to the arduino:
 
 - If the command is valid, the arduino responds "ACK" + and optional message
