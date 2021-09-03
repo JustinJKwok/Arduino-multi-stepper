@@ -27,7 +27,9 @@ Here's what you may need to modify (for each motor) based on your specific appli
   - (max)MotorAccel
 - stepsPerRev, steps per revolution (e.g. 1/8 microstepping on a 1.8 deg (200 step) motor is 1600 steps)
 - distPerRev, distance per revolution for your motion system. (e.g. motor directly coupled to a 2 mm pitch/4 start lead screw = 8 mm distance per rev)
+  - if you are using your stepper for a purpose other than linear motion, then have the 'distance' be in whatever units of what you are actually doing. For example, for a rotating/angular positioning system, 'distance' would be in units of degrees or radians.
 - min and maxPosition
+  - As above, have the 'position' be in whatever units you are using. For a rotational system this would be a min and max angle.  
 - isForwardCCW, whether counter clock-wise (looking from motor to shaft end) is considered forward (positive) motion. (May be reversed for you stepper driver)
 - disableWhenStill, depower the motor when not moving. Steppers generate heat when actively holding position. This will disable that but the motor can be turned by an external force (which may be desirable in some cases).
 - setPinsInverted arguments in setup(), this depends on your stepper driver.
@@ -46,7 +48,8 @@ For a list of commands see below. The arduino can also report relevant info like
 
 Instead of sending manual commands like above, you can automate the device or use it as part of a larger program. This can be done for example with PySerial.
 A Python module for controlling this specific arduino stepper controller and using it in combination with other devices for lab automation is available here:
-[add link]
+
+[Lab Automation](https://github.com/JustinJKwok/LabAutomation)
 
 If you want to develop your own software package then the communication protocol is as follows:
 
