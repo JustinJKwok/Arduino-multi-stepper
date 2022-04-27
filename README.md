@@ -10,6 +10,7 @@ Control multiple stepper motors using an arduino.
     - [Commands](#commands)
 3. [Materials](#materials)
 4. [Wiring Scheme](#wiring-scheme)
+    - [PCB](#pcb)
 5. [License](#license)
 
 ## Getting Started
@@ -88,7 +89,7 @@ Here are the materials you will need. The specific components I used are indicat
 ![scheme](multi_stepper_wiring.png)
 
 ### PCB
-Gerber files of a PCB for controlling 4 steppers is included. JST-XH connectors are intended for the motor and limit switches. Motor power comes from voltage supplied through a DC barrel which is also regulated down for 5V logic supply. 5V jumper pads are available for each driver's MS1, MS2, MS3 pins. A connection for an optional I2C LCD display is also provided.
+Gerber files of a PCB for controlling 4 steppers is included. JST-XH connectors are intended for the motor and limit switches. Motor power comes from voltage supplied through a DC barrel which is also regulated down for 5V logic supply. 5V jumper pads are available for each driver's MS1, MS2, MS3 pins. A connection for an optional I2C LCD display is also provided. 4 mounting holes are provided with diameters of 0.138'' or 3.5 mm.
 
 ![scheme](multi_stepper_pcb_rev1.PNG)
 
